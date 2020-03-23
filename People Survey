@@ -26,16 +26,12 @@ for name in database.keys():
     avr_age.append(database[name][0])
 
 def find_avr(list, command):
-    counter = 0
     if command == 0:
-        for height in range(len(list)):
-            counter += list[height]
+        counter = sum(list)
         avr = counter/len(list)
         return avr
     if command == 1:
-        counter = 0
-        for age in range(len(list)):
-            counter += list[age]
+        counter = sum(list)
         avr = counter/len(list)
         return avr
 
